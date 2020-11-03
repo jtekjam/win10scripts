@@ -1,5 +1,5 @@
 # win10scripts
-This is a new version of the Ultimate Windows 10 Script from a creation from multiple debloat scripts and gits from github (big thanks to ChrisTitus for the original). Just added my flare and a Win10 update manage scripts. See descriptions below or [go straight to running the scripts below](https://git.io/JUUFn)
+This is a new version of the Ultimate Windows 10 Script from a creation from multiple debloat scripts and gits from github (big thanks to ChrisTitus for the original). Added a few versions for debloat and business apps for automation with auto-reboot. See descriptions below or and use the scripts at the bottom. I also added a network admin tools section to just install network admin tools. 
 
 ## Windows 10 Update Manager
 - A simple Powershell script to manage windows updates
@@ -46,19 +46,19 @@ This is a new version of the Ultimate Windows 10 Script from a creation from mul
 ## Or just run the script from here...
 Manage Win10 Updates -
 ```
-powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JUUFv')"
+powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JTb3s')"
 ```
 CORE Script -
 ```
-powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJNyn')"
+powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JTb3L')"
 ```
 BIZ Script -
 ```
-powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJNyZ')"
+powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JTb3v')"
 ```
 NETADMIN Script -
 ```
-powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJNy8')"
+powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JTb3l')"
 ```
 
 ## Modifications
