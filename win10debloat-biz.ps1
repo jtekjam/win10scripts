@@ -28,6 +28,7 @@ $tweaks = @(
 	"InstallGIMP",
 	"InstallTeamViewer",
 	"InstallGreenshot",
+	"SecureScreenSaver",
 
 	### Windows Apps
 	"DebloatAll",
@@ -266,6 +267,32 @@ Function InstallOffice365Business {
 Function InstallMSTeams {
 	Write-Output "Installing Microsoft Teams"
 	choco install microsoft-teams.install -y
+}
+
+Function SecureScreenSaver {
+			$value = 900
+			$path = 'HKCU:\Control Panel\Desktop'
+			$name = 'ScreenSaveTimeOut'
+			$secure = 'ScreenSaverIsSecure'
+			$active = 'ScreenSaveActive'
+			$save = 'SCRNSAVE.EXE'
+			$ssaver = 'C:\Windows\system32\Mystify.scr'
+
+			# resume to lock
+			New-Item -Path $path -name $secure
+			Set-ItemProperty -Path $path -name $secure -value 1
+
+			# set active
+			New-Item -Path $path -name $active
+			Set-ItemProperty -Path $path -name $active -value 1
+
+			# set to 15 min
+			New-Item -Path $path -name $name
+			Set-ItemProperty -Path $path -name $name -value $value
+
+			# set to mystify
+			New-Item -Path $path -name $save
+			Set-ItemProperty -Path $path -name $save -value $ssaver
 }
 
 ##########
