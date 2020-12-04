@@ -12,11 +12,15 @@
 $tweaks = @(
 	### Require administrator privileges ###
 	"RequireAdmin",
-	"InstallNetAdminTools",
+	"InstallNetAdminTools"
+)
+
 
 Function InstallNetAdminTools {
 	Write-Output "Installing Network Admin Tools"
 	choco install network-miner -y
+	Function InstallAtom {
+	choco install atom -y
 	choco install wireshark -y
 	choco install vcredist140 -y
 	choco install openssh -y
