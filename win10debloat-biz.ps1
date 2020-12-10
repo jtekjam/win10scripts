@@ -29,7 +29,7 @@ $tweaks = @(
 	"InstallGreenshot",
 	"SecureScreenSaver",
 	"Restart"
-
+)
 
 
 Function InstallJtekProgs {
