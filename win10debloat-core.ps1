@@ -92,7 +92,7 @@ $tweaks = @(
 	"SetBIOSTimeUTC",             # "SetBIOSTimeLocal",
 	"DisableHibernation",		# "EnableHibernation",          #
 	"EnableSleepButton",		# "DisableSleepButton",
-	"DisableSleepTimeout",        # "EnableSleepTimeout",
+	# "DisableSleepTimeout",        # "EnableSleepTimeout",
 	# "DisableFastStartup",         # "EnableFastStartup",
 
 	### UI Tweaks ###
