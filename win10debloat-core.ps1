@@ -181,7 +181,8 @@ Function InstallJtekProgs {
 	choco install googlechrome -y
 	Write-Output "Installing Firefox"
 	choco install firefox -y /LANG=en
-	Write-Output "Setting Firefox as Default Browser"
+	Write-Output "Installing Irfanview"
+	choco install irfanview -y
 }
 
 Function SecureScreenSaver {
