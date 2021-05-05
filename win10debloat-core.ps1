@@ -13,20 +13,7 @@ $tweaks = @(
 	"RequireAdmin",
 
 	### External Program Setup
-	"InstallJtekProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
-	# "InstallFoxitPDF",
-	"Install7Zip",
-	# "InstallAtom",
-	# "InstallVLC",
-	# "InstallDrawIO",
-	# "InstallDefaultBrowser",
-	# "InstallChrome",
-	# "InstallFirefox",
-	# "InstallOffice365Business",
-	# "InstallMSTeams",
-	# "InstallGIMP",
-	# "InstallTeamViewer",
-	# "InstallGreenshot",
+	"InstallJtekProgs",
 	"SecureScreenSaver",
 
 	### Windows Apps
@@ -52,49 +39,33 @@ $tweaks = @(
 	"DisableWAPPush",               # "EnableWAPPush",
 
 	### Security Tweaks ###
-	#"SetUACLow",                  # "SetUACHigh",
-	# "EnableSharingMappedDrives",  # "DisableSharingMappedDrives",
-	"DisableAdminShares",           # "EnableAdminShares",
-	"DisableSMB1",                # "EnableSMB1",
-	"DisableSMBServer",           # "EnableSMBServer",
-	# "DisableLLMNR",               # "EnableLLMNR",
-	"SetCurrentNetworkPrivate",     # "SetCurrentNetworkPublic",
-	"SetUnknownNetworksPrivate",  # "SetUnknownNetworksPublic",
-	"DisableNetDevicesAutoInst",  # "EnableNetDevicesAutoInst",
-	"DisableCtrldFolderAccess",	# "EnableCtrldFolderAccess",
-	# "DisableFirewall",            # "EnableFirewall",
-	#"DisableDefender",
-	#"EnableDefender",
-	#"DisableDefenderCloud",
-	#"EnableDefenderCloud",
-	"EnableF8BootMenu",             # "DisableF8BootMenu",
-	#"SetDEPOptOut",                 # "SetDEPOptIn",
-	# "EnableCIMemoryIntegrity",    # "DisableCIMemoryIntegrity",
-	#"DisableScriptHost",            # "EnableScriptHost",
-	#"EnableDotNetStrongCrypto",     # "DisableDotNetStrongCrypto",
-	"DisableMeltdownCompatFlag", # "EnableMeltdownCompatFlag"
-
-	### Service Tweaks ###
-	"DisableUpdateMSRT",          # "EnableUpdateMSRT",
-	# "DisableUpdateDriver",        # "EnableUpdateDriver",
-	"DisableUpdateRestart",         # "EnableUpdateRestart",
-	"DisableHomeGroups",          # "EnableHomeGroups",
-	"DisableSharedExperiences",     # "EnableSharedExperiences",
-	"DisableRemoteAssistance",      # "EnableRemoteAssistance",
-	# "EnableRemoteDesktop",
+"DisableSharingMappedDrives",
+	"DisableAdminShares",
+	"DisableSMB1",
+	"DisableSMBServer",
+	"SetCurrentNetworkPrivate",
+"SetUnknownNetworksPublic",
+	"DisableNetDevicesAutoInst",
+	"DisableCtrldFolderAccess",
+	"EnableF8BootMenu",
+	"DisableMeltdownCompatFlag",
+	"DisableUpdateMSRT",
+	# "DisableUpdateDriver",
+	"DisableUpdateRestart",
+	"DisableHomeGroups",
+	"DisableSharedExperiences",
+	"DisableRemoteAssistance",
 	"DisableRemoteDesktop",
-	"DisableAutoplay",					# "EnableAutoplay",
-	"DisableAutorun",               # "EnableAutorun",
-	"DisableStorageSense",        # "EnableStorageSense",
-	"DisableDefragmentation",     # "EnableDefragmentation",
-	"DisableSuperfetch",          # "EnableSuperfetch",
-	#"DisableIndexing",            # "EnableIndexing",
-	"SetBIOSTimeUTC",             # "SetBIOSTimeLocal",
-	"DisableHibernation",		# "EnableHibernation",          #
-	"EnableSleepButton",		# "DisableSleepButton",
-	# "DisableSleepTimeout",        # "EnableSleepTimeout",
-	# "DisableFastStartup",         # "EnableFastStartup",
-
+	"DisableAutoplay",
+	"DisableAutorun",
+	"DisableStorageSense",
+	"DisableDefragmentation",
+	"DisableSuperfetch",
+	"SetBIOSTimeUTC",
+	"DisableHibernation",
+	"EnableSleepButton",
+	# "DisableSleepTimeout", ,
+	# "DisableFastStartup",
 	### UI Tweaks ###
 	"DisableActionCenter",          # "EnableActionCenter",
 	#"DisableLockScreen",            # "EnableLockScreen",
@@ -144,7 +115,7 @@ $tweaks = @(
 	"HideVideosFromExplorer",     # "ShowVideosInExplorer",
 	"Hide3DObjectsFromThisPC",      # "Show3DObjectsInThisPC",
 	"Hide3DObjectsFromExplorer",  # "Show3DObjectsInExplorer",
-	"DisableThumbnails",          # "EnableThumbnails",
+	# "DisableThumbnails",          # "EnableThumbnails",
 	"DisableThumbsDB",              # "EnableThumbsDB",
 
 	### Application Tweaks ###
@@ -198,80 +169,21 @@ Function InstallJtekProgs {
 	Start-BitsTransfer -Source "https://raw.githubusercontent.com/jtekjam/win10scripts/master/ooshutup10.cfg" -Destination ooshutup10.cfg
 	Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
 	./OOSU10.exe ooshutup10.cfg /quiet
-}
-
-Function InstallGIMP {
-	Write-Output "Installing GIMP"
-	choco install gimp -y
-}
-
-Function InstallGreenshot{
 	Write-Output "Installing GreenShot"
 	choco install greenshot -y
-}
-
-Function InstallTeamViewer {
-	Write-Output "Installing Teamviewer"
-	choco install teamviewer -y
-}
-
-Function InstallFoxitPDF {
 	Write-Output "Installing Foxit PDF Reader"
 	choco install foxitreader -y
-}
-
-Function InstallJava {
 	Write-Output "Installing Java"
 	choco install jre8 -y
-}
-
-Function Install7Zip {
 	Write-Output "Installing 7-Zip"
 	choco install 7zip -y
-}
-
-Function InstallAtom {
-	Write-Output "Installing Atom text editor"
-	choco install atom -y
-}
-
-Function InstallVLC {
-	Write-Output "Installing VLC Media Player"
-	choco install vlc -y
-}
-
-Function InstallDrawIO {
-	Write-Output "Installing Draw.IO Diagram Editor"
-	choco install drawio -y
-}
-
-Function InstallDefaultBrowser {
-	Write-Output "Installing Default Browser"
-	choco install setdefaultbrowser -y
-}
-
-Function InstallChrome {
 	Write-Output "Installing Chrome"
 	choco install googlechrome -y
-
-}
-
-Function InstallFirefox {
 	Write-Output "Installing Firefox"
 	choco install firefox -y /LANG=en
 	Write-Output "Setting Firefox as Default Browser"
-	SetDefaultBrowser.exe firefox
 }
 
-Function InstallOffice365Business {
-	Write-Output "Installing Office365 Business"
-	choco install office365business -y
-}
-
-Function InstallMSTeams {
-	Write-Output "Installing Microsoft Teams"
-	choco install microsoft-teams.install -y
-}
 Function SecureScreenSaver {
 			$value = 900
 			$path = 'HKCU:\Control Panel\Desktop'
