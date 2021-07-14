@@ -1,3 +1,5 @@
+# TWEAKS, DEBLOAT, INSTALL APPS - Please give credit where credit is due - Chris Titus, SlackerPS and more. 
+    
     Write-Host "Creating Restore Point incase something bad happens"
     Enable-ComputerRestore -Drive "C:\"
     Checkpoint-Computer -Description "RestorePoint1" -RestorePointType "MODIFY_SETTINGS"
