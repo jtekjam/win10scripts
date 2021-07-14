@@ -4,44 +4,14 @@ This is a new version of the Ultimate Windows 10 Script from a creation from mul
 ## Windows 10 Update Manager
 - A simple Powershell script to manage windows updates
 
-## CORE: Debloat Only Script
+## CORE: Debloat Plus Installs
 - O&O Shutup10 CFG and Run is almost the recommended list
+- Disable Telemetry, Trackers
+- Network Tweaks
 - Leave IE in place
-- Install Chocolately
+- Using Winget instead of Chocolately
 - Debloat Windows - disable xbox, remove fax, remove xps, and more...
-- Install 7-z7ip
-
-## BIZ: Debloat Plus Useful Business Apps
-- Everything in CORE plus...
-- Install Foxit PDF instead of Adobe
-- Install Atom text editor
-- Install Firefox
-- Install Chrome
-- Install Draw.io
-- Install SetDefaultBrowser (set default to firefox)
-- Install Microsoft Teams
-- Install Microsoft Office 365 Business
-- Install GIMP
-- Install TeamViewer
-- Install greenshot
-
-## NETADMIN: network admin tools
--- Just installs following --
-- Install network-miner
-- Install wireshark
-- Install vcredist140
-- Install openssh
-- Install python3
-- Install putty
-- Install sysinternals
-- Install dotnet4.5.2
-- Install winscp
-- Install virtualbox
-- Install microsoft-windows-terminal
-- Install rufus
-- Install vmrc
-- Install pingplotter
-- Install TFTP32/64
+- Install 7-zip, VLC, Foxit, Office 365, Greenshot, Browsers, more
 
 ## Or just run the script from here...
 Manage Win10 Updates -
@@ -50,17 +20,8 @@ powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io
 ```
 CORE Script -
 ```
-powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JTb3L')"
+powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/jtekjam/win10scripts/master/new-installer.ps1')"
 ```
-BIZ Script -
-```
-powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JTb3v')"
-```
-NETADMIN Script -
-```
-powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JTb3l')"
-```
-
 ## Modifications
 I encourage people to fork this project and comment out things they don't like!
 
