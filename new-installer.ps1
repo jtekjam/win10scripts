@@ -254,13 +254,6 @@ Write-Host "Enabling NumLock after startup..."
     Write-Host "Installing Irfanview (Image Viewer)"
     winget install IrfanSkiljan.IrfanView | Out-Host
 
-    Write-Host "Installing Image Glass (Image Viewer)"
-    winget install DuongDieuPhap.ImageGlass | Out-Host
-
-
-    Write-Host "Installing Adobe Reader DC"
-    winget install Adobe.AdobeAcrobatReaderDC | Out-Host
-
     Write-Host "Installing Notepad++"
     winget install Notepad++.Notepad++ | Out-Host
 
