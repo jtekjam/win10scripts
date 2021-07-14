@@ -11,7 +11,7 @@ This is a new version of the Ultimate Windows 10 Script from a creation from mul
 - Leave IE in place
 - Using Winget instead of Chocolately
 - Debloat Windows - disable xbox, remove fax, remove xps, and more...
-- Install 7-zip, VLC, Foxit, Office 365, Greenshot, Browsers, more
+- Install 7-zip, VLC, Foxit, Office 365, Greenshot, Browsers, Windows Terminal, Irfanview
 
 ## Or just run the script from here...
 Manage Win10 Updates -
