@@ -22,5 +22,10 @@ CORE Script -
 ```
 powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/jtekjam/win10scripts/master/new-installer.ps1')"
 ```
+Remote PC (no office, greenshot, vlc, etc) Script -
+```
+powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/jtekjam/win10scripts/master/remote-pc.ps1')"
+```
+
 ## Modifications
 I encourage people to fork this project and comment out things they don't like!
